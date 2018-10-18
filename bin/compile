@@ -134,11 +134,11 @@ ENV_DIR=$3
 
 # fix STACK variable if unset
 if [[ -z "${STACK}" ]]; then
-  STACK="ngoishi"
+  STACK="heroku-16"
 fi
 
 # ensure correct stack
-if [[ ! "$STACK" == "ngoishi" ]]; then
+if [[ ! "$STACK" == "heroku-16" ]]; then
 
   echo
   echo "-----> ERROR: This version of the buildpack is intended for use with the 'heroku-16' stack"
